@@ -1,4 +1,4 @@
-{% etends "base.html" %}
+{% extends "base.html" %}
 {% block title%}{{block.super}} | index_generale {%endblock title%}
 
 {%block content%}
@@ -7,4 +7,4 @@
         <li><a href="{% url 'prima_app:index'%}">prima_app</a><li>    
         <li><a href="{% url 'seconda_app:index2'%}">seconda_app</a><li> 
     </ol>
-    {%endblock content%}
+{%endblock content%}
