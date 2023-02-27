@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title%}{{block.super}} | view_a_auto {% endblock title %}
+
+{% block content %}
+<h1>Elenco la lista delle targhe auto</h1>
+    <ol>
+    {% for x in auto %}  
+        <li>{{x}}</li>
+    {% endfor %}    
+
+    </ol>
+{% endblock content %}
